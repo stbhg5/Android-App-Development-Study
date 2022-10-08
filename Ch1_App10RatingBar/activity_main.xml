@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RatingBar
+        android:id="@+id/ratingVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        android:numStars="5"
+        android:rating="1"
+        android:stepSize="0.2"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnDec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A6A4A4"
+            android:layout_margin="10dp"
+            android:text="-"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/btnInc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A6A4A4"
+            android:layout_margin="10dp"
+            android:text="+"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/btnResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A6A4A4"
+            android:layout_margin="5dp"
+            android:text="투표결과는?"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+</LinearLayout>
