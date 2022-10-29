@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 연습용  스타일이다.. 삭제해도 무방하다-->
+<resources>
+    <style name="myButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">내가만든버튼</item>
+    </style>
+</resources>

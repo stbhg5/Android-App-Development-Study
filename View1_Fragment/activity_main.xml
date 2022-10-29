@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C6C3C3"
+        android:onClick="setFrag1"
+        android:text="프래그먼트1"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C6C3C3"
+        android:onClick="setFrag2"
+        android:text="프래그먼트2"
+        android:textColor="#000000"/>
+
+    <!--프래그먼트 뷰를 겹쳐놓으려고 FrameLayout으로 설정-->
+    <FrameLayout
+        android:id="@+id/fame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#52DAEC"/>
+
+</LinearLayout>

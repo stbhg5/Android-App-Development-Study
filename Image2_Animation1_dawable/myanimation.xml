@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <!--oneshot이 false면 한번만, true면 무한반복-->
+
+    <!--이미지프레임, 시간(초)-->
+    <item android:drawable="@drawable/frame1" android:duration="200"/>
+    <item android:drawable="@drawable/frame2" android:duration="200"/>
+    <item android:drawable="@drawable/frame3" android:duration="200"/>
+    <item android:drawable="@drawable/frame4" android:duration="200"/>
+    <item android:drawable="@drawable/frame5" android:duration="200"/>
+    <item android:drawable="@drawable/frame7" android:duration="200"/>
+    <item android:drawable="@drawable/frame8" android:duration="200"/>
+
+</animation-list>
