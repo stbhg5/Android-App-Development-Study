@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/editeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="이름입력"
+        android:selectAllOnFocus="true"/>
+
+    <EditText
+        android:id="@+id/editeAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="나이입력"
+        android:inputType="number"
+        android:selectAllOnFocus="true"/>
+
+    <TableLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/btnInsert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF9800"
+                android:layout_marginRight="5dp"
+                android:onClick="mOnClick"
+                android:text="삽 입"/>
+            <Button
+                android:id="@+id/btnSelectAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E498E0E9"
+                android:layout_marginRight="5dp"
+                android:onClick="mOnClick"
+                android:text="전체검색"/>
+            <Button
+                android:id="@+id/btnSelectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E498E0E9"
+                android:onClick="mOnClick"
+                android:text="이름검색"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/btnUpdateAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF9800"
+                android:layout_marginRight="5dp"
+                android:onClick="mOnClick"
+                android:text="나이갱신"/>
+            <Button
+                android:id="@+id/btnDeleteName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF9800"
+                android:layout_marginRight="5dp"
+                android:onClick="mOnClick"
+                android:text="이름삭제"/>
+            <Button
+                android:id="@+id/btnDeleteAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF9800"
+                android:onClick="mOnClick"
+                android:text="전체삭제"/>
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:fadeScrollbars="false"
+        android:padding="4dp">
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height = "wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="18dp"/>
+    </ScrollView>
+
+</LinearLayout>

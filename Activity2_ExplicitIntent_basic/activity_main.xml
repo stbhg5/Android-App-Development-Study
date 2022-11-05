@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Activity Change"
+        android:layout_gravity="center_horizontal"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold|italic"/>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/secondChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second액티비티"/>
+            <RadioButton
+                android:id="@+id/thirdChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Third액티비티"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <!--버튼에 이벤트메소드 등록-->
+    <Button
+        android:id="@+id/mBtn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0bc4f7"
+        android:text="새화면 열기"
+        android:onClick="mOnClick"/>
+
+</LinearLayout>
