@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.service1_startservice1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Service1_startService1">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--다른 컴포넌트들이 이 서비스를 사용할 수 있도록 하려면 이렇게 선언해야하고. 만약 애플리케이션 안에서만 하려면 선언안해도된다.-->
+        <service
+            android:name=".MusicService"
+            android:enabled="true"/>
+    </application>
+
+</manifest>

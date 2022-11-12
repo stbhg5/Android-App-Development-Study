@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="내가있는 위치정보"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:textColor="#3F51B5"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="30dp"
+        android:layout_marginTop="50dp"
+        android:includeFontPadding="true"
+        android:text="아직 수신되지 않았음.기다려주세요..."
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:typeface="serif"/>
+
+</LinearLayout>

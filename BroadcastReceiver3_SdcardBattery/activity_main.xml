@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="밧데리와 외장메모리 이벤트 체크"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#3F51B5"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150sp"
+        android:hint="발생 액션과  밧데리레벨이 출력됩니다. "
+        android:textSize="20sp"/>
+
+</LinearLayout>
